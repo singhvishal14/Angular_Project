@@ -1,0 +1,20 @@
+{
+    "data":[
+    {
+     "firstname": "Ted",
+     "lastname": "James",
+     "address": "1234 ANyWhere st.",
+     "city": "Phonix",
+     "state": "Anzona",
+     "oerdertotal":"$207.98"
+   },
+   {
+     "firstname": "Michelle",
+     "lastname": "Thompson",
+     "address": "345 Ceder Point Ave.",
+     "city": "Encitivs",
+     "state": "Calfornia",
+     "oerdertotal":"$8.98"
+   }
+  ]
+}

@@ -1,0 +1,61 @@
+
+
+<div class="container">
+    <h4> <span class="glyphicon glyphicon-user"></span>Customers</h4>
+    <div class="row">
+        <div class="col-sm-2">
+            <button><span class="glyphicon glyphicon-th-large"></span> Card View</button>
+        </div>
+        <div class="col-sm-2">
+            <button><span class="glyphicon glyphicon-th-list"></span> List View</button>
+        </div>
+        <div class="col-sm-2">
+            <button><span class="glyphicon glyphicon-map-marker"></span> MapView</button>
+        </div>
+       
+        <div class="col-sm-2">
+            <button><span class="glyphicon glyphicon-plus"></span> New Customer</button>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label for="">Filter</label>
+                <input type="text" [(ngModel)]="term">
+            </div>
+        </div>
+    </div>
+  
+      <div >
+        <table class="table">
+            <thead>
+                <th></th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>OrderTotal</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of data | filter:term">
+                    <td><img [src]="imgurl" alt="" srcset=""></td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.address}}</td>
+                    <td>{{user.city}}</td>
+                    <td>{{user.state}}</td>
+                    <td>{{user.ordertotal}}</td>
+                    <td><a href="">ViewOrders</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li><a href="#"><<</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+      </div>
+</div>

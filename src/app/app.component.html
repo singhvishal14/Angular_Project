@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default" style="background-color:skyblue;color: white; ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img [src]="'C:\Users\KALPANA\Desktop\Practice Exercises\angular\image'" alt="" srcset=""> Customer Manager</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="#" [routerLink]="['/customer']">Customers</a></li>
+      <li > <a href="" [routerLink]="['/order']">Orders</a></li>
+      <li > <a href="" [routerLink]="['/about']">About</a></li>
+      <li ><a href="" [routerLink]="['/login']">Login</a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>

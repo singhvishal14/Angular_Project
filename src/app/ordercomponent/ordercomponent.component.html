@@ -1,0 +1,33 @@
+<div class="container">
+    <h4> <span class="glyphicon glyphicon-folder-open"></span>Orders</h4>
+    <div class="row">
+        <h4>Ted James</h4>
+        <div *ngFor="let data of data">
+            <div class="row">
+                <div class="col-sm-2">{{data.ordername}}</div>
+                <div class="col-sm-8"></div>
+                <div class="col-sm-2">{{data.amount}}</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-10"></div>
+            <div class="col-sm-2">$207.98</div>
+        </div>
+        </div>
+        <div class="row">
+            <h4>Michelle Thomspson</h4>
+            <div *ngFor="let data of data1">
+                <div class="row">
+                    <div class="col-sm-2">{{data.ordername}}</div>
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-2">{{data.amount}}</div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-10"></div>
+                <div class="col-sm-2">$8.98</div>
+            </div>
+            </div>
+        </div>
